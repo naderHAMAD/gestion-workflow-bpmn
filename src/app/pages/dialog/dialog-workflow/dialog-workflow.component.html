@@ -1,0 +1,17 @@
+<div class="card">
+      <h3 class="card-title">Workflow Information</h3>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="workflowName">Workflow Name</label>
+          <input type="text" class="form-control" id="workflowName" placeholder="Enter workflow name" [(ngModel)]="data.workflowName">
+        </div>
+        <div class="form-group">
+          <label for="xmlName">XML Name</label>
+          <input type="text" class="form-control" id="xmlName" placeholder="Enter XML name" [(ngModel)]="data.xmlName">
+        </div>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-secondary" (click)="onCancelClick()">Cancel</button>
+        <button type="submit" class="btn btn-primary" [mat-dialog-close]="data" cdkFocusInitial [disabled]="!data.workflowName || !data.xmlName">Save</button>
+      </div> 
+ </div> 

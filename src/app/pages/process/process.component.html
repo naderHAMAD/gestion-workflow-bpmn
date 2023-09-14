@@ -1,0 +1,109 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      <div class="row">
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h6 class="card-title text-uppercase text-muted mb-0">Total Process Instances</h6>
+                  <span class="h2 font-weight-bold mb-0">{{ workflowsProcessInstancesLength}}</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="ni ni-archive-2"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"> </i> 12</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h6 class="card-title text-uppercase text-muted mb-0">Finished process Instances</h6>
+                  <span class="h2 font-weight-bold mb-0">2</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="ni ni-paper-diploma"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-danger mr-2"><i class="fas fa-arrow-down"> </i> 6</span>
+                <span class="text-nowrap">Since last week</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt--7">
+  <div class="row mt-5">
+    <div class="col">
+      <div class="card bg-default shadow">
+        <div class="card-header bg-transparent border-0">
+          <h3 class="text-white mb-0"> Available Process Instances </h3>
+        </div>
+        <div class="table-responsive">
+
+          <table class="table align-items-center table-flush table-dark">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Process Instance ID</th>
+                <th scope="col">Process Name</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let workflowsProcessInstance of workflowsProcessInstances">
+                <td>
+                  <div class="media align-items-center">
+                    <div class="media-body">
+                      <span class="mb-0 text-sm">{{workflowsProcessInstance.processInstanceId}}</span>
+                    </div>
+                  </div>
+                </td>
+                <td>{{workflowsProcessInstance.workflow.name}}</td>
+                <td>                 
+                  <span *ngIf="workflowsProcessInstance.status === 'ACTIVE'" class="badge badge-dot mr-4">
+                    <i class="bg-success"></i> active
+                  </span>
+                  <span *ngIf="workflowsProcessInstance.status === 'SUSPENDED'" class="badge badge-dot mr-4">
+                    <i class="bg-warning"></i> suspended
+                  </span>
+                  <span *ngIf="workflowsProcessInstance.status === 'COMPLETED'" class="badge badge-dot mr-4">
+                    <i class="bg-danger"></i> completed
+                  </span>
+                </td>
+                <td>
+                  <div class="d-flex">
+                    <a *ngIf="workflowsProcessInstance.status === 'SUSPENDED'" class="btn btn-success mr-2 ni ni-button-play" style="border-radius:8px;" (click)="resumeWorkflowProcessInstance(workflowsProcessInstance.processInstanceId)"></a>
+                    <a *ngIf="workflowsProcessInstance.status === 'ACTIVE'" class="btn btn-danger mr-2 ni ni-button-pause" style="border-radius:8px;" (click)="suspendWorkflowProcessInstance(workflowsProcessInstance.processInstanceId)"></a>
+                    <a class="btn btn-default mr-2 ni ni-fat-delete" style="border-radius:10px; border: 2px solid #e9e9e9;" placement="top" ngbTooltip="Delete Process Instance" (click)="deleteWorkflowProcessInstance(workflowsProcessInstance.id)"></a>
+                    <!--<a *ngIf="workflowsProcessInstance.status !== 'COMPLETED'" class="btn btn-default mr-2 ni ni-curved-next" style="border-radius:10px; border: 2px solid #e9e9e9;" placement="top" ngbTooltip="Restart Process Instance" (click)="restartWorkflowProcessInstance(workflowsProcessInstance.processInstanceId)"></a>-->
+                    <a  class="btn btn-default mr-4 ni ni-archive-2" style="border-radius:10px; border: 2px solid #e9e9e9;" placement="top" ngbTooltip="Display Execution History of Process Instance" (click)="openHistoryDialog(workflowsProcessInstance.processInstanceId)"></a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

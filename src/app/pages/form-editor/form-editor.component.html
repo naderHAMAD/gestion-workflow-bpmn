@@ -1,0 +1,24 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card bg-light border-0">
+          <div class="card-body p-4">
+            <!-- Form editor buttons -->
+            <div class="text-center mb-4">
+              <button *ngIf="!isUpdate" class="btn btn-danger btn-sm mr-2" (click)="saveForm()">Save Form</button>
+              <button *ngIf="isUpdate" class="btn btn-danger btn-sm mr-2" (click)="updateAndSaveForm()">Update Form</button>
+              <button class="btn btn-danger btn-sm mr-2" (click)="downloadFormJson()">Download Form</button>
+              <input class="form-control d-none" type="file" #fileInput (change)="importFormJson($event)">
+              <button *ngIf="!isUpdate" class="btn btn-danger btn-sm" (click)="fileInput.click()">Import Form</button>
+            </div>
+            <!-- Form editor -->
+            <div class="card bg-light border-0 p-3">
+              <div #canvas class="rounded border" style="min-height: 100px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

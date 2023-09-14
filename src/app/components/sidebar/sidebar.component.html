@@ -1,0 +1,95 @@
+<nav class="navbar navbar-vertical navbar-expand-md navbar-dark bg-dark" id="sidenav-main">
+  <div class="container-fluid">
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" (click)="isCollapsed=!isCollapsed"
+       aria-controls="sidenav-collapse-main">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Brand -->
+    <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/user-profile']">
+      <img src="path/to/your/logo.png" class="navbar-brand-img" alt="Brand Logo">
+    </a>
+    <!-- User -->
+    <ul class="nav align-items-center d-md-none">
+      <!-- User Dropdown -->
+    </ul>
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
+      <!-- Collapse header -->
+      <div class="navbar-collapse-header d-md-none">
+        <!-- Brand for Collapse -->
+      </div>
+      <!-- Form -->
+      <form class="mt-4 mb-3 d-md-none">
+        <!-- Search Form -->
+      </form>
+      <!-- Navigation -->
+      <ul class="navbar-nav">
+        <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+          <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+            <i class="ni {{menuItem.icon}}"></i>
+            {{menuItem.title}}
+          </a>
+        </li>
+      </ul>
+      <!-- Divider -->
+      <hr class="my-3">
+      <!-- Heading -->
+      <h6 class="navbar-heading text-muted">Documentation</h6>
+      <!-- Documentation Links -->
+      <ul class="navbar-nav mb-md-3">
+        <li class="nav-item">
+          <a class="nav-link" href="https://camunda.com/">
+            <i class="ni ni-spaceship"></i>Know more about Camunda!
+          </a>
+        </li>
+        <!-- Add more documentation links here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar-vertical {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 8px;
+  }
+
+  .navbar-brand-img {
+    max-height: 40px;
+    padding: 8px;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+  }
+
+  .navbar-collapse-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar-collapse-header img {
+    max-height: 30px;
+  }
+
+  .navbar-heading {
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-nav.mb-md-3 {
+    margin-bottom: 20px;
+  }
+</style>
+
+

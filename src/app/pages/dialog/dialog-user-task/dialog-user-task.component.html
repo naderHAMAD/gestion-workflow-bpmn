@@ -1,0 +1,27 @@
+<div class="card">
+    <h3 class="card-title">UserTask Information</h3>
+    <div class="card-body">
+      <!-- <div class="form-group">
+        <label for="assignee">Assignee</label>
+        <input type="text" class="form-control" id="assignee" placeholder="Set User Task assignee" [(ngModel)]="data.assignee" >
+      </div>-->
+      <div class="form-group">
+        <label for="assignee">Candidates Users</label>
+        <select class="form-control" id="assignee" [(ngModel)]="data.assignee">
+            <option selected>USER</option>
+            <option value="VALIDATOR">VALIDATOR</option>
+            <option value="ADMIN">ADMIN</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="formKey">Assign Form</label>
+        <select class="form-control" id="formKey" [(ngModel)]="data.formKey">
+          <option *ngFor="let form of forms" [value]="form.formKey">{{form.formKey}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-secondary"(click)="onCancelClick()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [mat-dialog-close]="data" cdkFocusInitial [disabled]="!data.formKey">Save</button>
+    </div> 
+</div>

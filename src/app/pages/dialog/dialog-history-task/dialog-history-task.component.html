@@ -1,0 +1,27 @@
+    <div class="card bg-secondary">
+        <div class="card-header bg-transparent border-0">
+            <button class="close-button btn btn-danger btn-sm" (click)="closeDialog()">close</button>      
+        </div>
+      <div class="table-responsive">
+        <table class="table align-items-center table-flush table-light" style="border-radius:10px;">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Activity Name</th>
+              <th scope="col">Activity Type</th>
+              <th scope="col">Start Time</th>
+              <th scope="col">End Time</th>
+              <th scope="col">Duration (s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let historicActivityIns of historicActivityInstances">
+              <td>{{ historicActivityIns.activityName || " ___ " }} </td>
+              <td>{{ historicActivityIns.activityType }}</td>
+              <td>{{ historicActivityIns.startTime | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+              <td>{{ historicActivityIns.endTime | date:'yyyy-MM-dd HH:mm:ss' }}</td>
+              <td>{{ (historicActivityIns.durationInMillis / 1000).toFixed(2) }} s</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>

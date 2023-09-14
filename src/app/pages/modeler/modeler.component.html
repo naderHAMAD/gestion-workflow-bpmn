@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js@11.2.0/dist/assets/bpmn-font/css/bpmn.css">
+<link rel="stylesheet" href="https://unpkg.com/bpmn-js@11.2.0/dist/assets/bpmn-font/css/bpmn-embedded.css">
+
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+
+    <button *ngIf="!isUpdate" class="btn btn-transparent text-white" style="border-radius:10px; border: 2px solid #e9e9e9;" (click)="onSaveClick()" > Save BPMN </button>
+    <button *ngIf="isUpdate" class="btn btn-transparent text-white" style="border-radius:10px; border: 2px solid #e9e9e9;" (click)="onUpdateClick()" > Update BPMN </button>
+    <button class="btn btn-transparent text-white" style="border-radius:10px; border: 2px solid #e9e9e9;" (click)="onDownloadClick()"> Download BPMN </button>
+    <button *ngIf="!isUpdate" class="btn btn-transparent text-white" style="border-radius:10px; border: 2px solid #e9e9e9;" (click)="onImportClick()" > Import BPMN </button>
+
+    <div class="card" style="margin-top:10px;border-radius: 5px ;border: 2px solid #ccc;">
+      <div #canvas style="border-radius: 5px ;width:100%; height: 600px;"></div>
+      <div id="properties-panel"></div>
+
+    </div>
+        
+  </div>
+</div>

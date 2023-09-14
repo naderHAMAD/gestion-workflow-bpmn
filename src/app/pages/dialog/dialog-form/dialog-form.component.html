@@ -1,0 +1,16 @@
+<div class="card">
+    <h3 class="card-title">Form Information</h3>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="formType">Choose Form Type</label>
+        <select class="form-control" id="formType" [(ngModel)]="data.formType">
+            <option selected>FORM_DATA</option>
+            <option value="FORM_DECISION">FORM_DECISION</option>
+        </select>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-secondary"(click)="onCancelClick()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [mat-dialog-close]="data" cdkFocusInitial [disabled]="!data.formType">Save</button>
+    </div> 
+</div>

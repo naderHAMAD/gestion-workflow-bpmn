@@ -1,0 +1,8 @@
+.rounded-image {
+    width: 70px; /* Adjust the size as per your preference */
+    height: 70px;
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

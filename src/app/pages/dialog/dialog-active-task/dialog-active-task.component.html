@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-body">
+    <div *ngIf="formContent">
+      <h2>{{ formContent.id }}</h2>
+      <div *ngFor="let component of formContent.components">
+        <div class="form-group" *ngIf="component.type === 'textfield'">
+          <label>{{ component.label }}</label>
+          <input class="form-control" type="text" id="{{ component.id }}" name="{{ component.key }}" />
+        </div>
+
+        <div class="form-group radio-group" *ngIf="component.type === 'radio'">
+          <label>{{ component.label }}</label>
+          <div *ngFor="let value of component.values">
+            <input
+              type="radio"
+              id="{{ component.id }}_{{ value.value }}"
+              name="{{ component.key }}"
+              value="{{ value.value }}"
+              [(ngModel)]="selectedInputValue"
+            />
+            <label for="{{ component.id }}_{{ value.value }}">{{ value.label }}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-secondary" (click)="onCancelClick()">Cancel</button>
+      <button type="button" class="btn btn-primary" (click)="onCompleteClick()">Complete</button>
+    </div>
+  </div>
+</div>
