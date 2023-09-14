@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc9d88ce-928d-43f3-bd18-76327bd5efc9" name="Changes" comment="update form service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2L99SeRorVnunXFEXFDWEpkEEAD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/static/bpmnsTest" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\end-of-study-project\flowvioo\backend\src\test\resources\static\bpmnsTest" />
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\end-of-study-project\flowvioo\backend\src\main\resources" />
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\research-subjects\camunda-workflow\embedded\src\main\resources\static\bpmn" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\end-of-study-project\flowvioo\backend\src\main\resources\static" />
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\end-of-study-project\flowvioo\backend\src\main\resources" />
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\end-of-study-project\flowvioo\backend\src\main\resources\static\forms" />
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\research-subjects\camunda-workflow\embedded\src\main\resources\static\bpmn" />
+      <recent name="C:\Users\Drissi houcem eddine\Desktop\Work\End-of-study-Internship\research-subjects\camunda-workflow\embedded\src\main\resources\static\forms" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.workflow.security" />
+      <recent name="com.example.workflow.jwt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="FormsServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.workflow.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.workflow.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.workflow.service.FormsServiceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkflowRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.workflow.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.workflow.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.example.workflow.repository.WorkflowRepositoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.workflow.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.FormsServiceTest" />
+      <item itemvalue="JUnit.WorkflowRepositoryTest" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FormsServiceTest" />
+        <item itemvalue="JUnit.WorkflowRepositoryTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc9d88ce-928d-43f3-bd18-76327bd5efc9" name="Changes" comment="" />
+      <created>1675272440789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675272440789</updated>
+      <workItem from="1675272443925" duration="6990000" />
+      <workItem from="1675357081924" duration="8034000" />
+      <workItem from="1675460041726" duration="2128000" />
+      <workItem from="1675537603779" duration="6353000" />
+      <workItem from="1675602380804" duration="1699000" />
+      <workItem from="1675623549822" duration="240000" />
+      <workItem from="1675670038231" duration="8664000" />
+      <workItem from="1675859836379" duration="2110000" />
+      <workItem from="1675872233316" duration="6579000" />
+      <workItem from="1675932248107" duration="12650000" />
+      <workItem from="1675969287491" duration="2854000" />
+      <workItem from="1676222054934" duration="439000" />
+      <workItem from="1676241191442" duration="1553000" />
+      <workItem from="1676447509207" duration="1784000" />
+      <workItem from="1676842949199" duration="826000" />
+      <workItem from="1676908166337" duration="2423000" />
+      <workItem from="1676965259731" duration="2705000" />
+      <workItem from="1676983354123" duration="4265000" />
+      <workItem from="1676987927689" duration="2435000" />
+      <workItem from="1677072663302" duration="11305000" />
+      <workItem from="1677160033482" duration="1826000" />
+      <workItem from="1677247884477" duration="2061000" />
+      <workItem from="1677253388123" duration="815000" />
+      <workItem from="1677254356453" duration="6015000" />
+      <workItem from="1677282434393" duration="248000" />
+      <workItem from="1677326485366" duration="12196000" />
+      <workItem from="1677354459816" duration="6229000" />
+      <workItem from="1677408481105" duration="7722000" />
+      <workItem from="1677425885447" duration="7523000" />
+      <workItem from="1677484364035" duration="6487000" />
+      <workItem from="1677571062570" duration="3971000" />
+      <workItem from="1677688513787" duration="4606000" />
+      <workItem from="1677757570521" duration="5218000" />
+      <workItem from="1677774227933" duration="17535000" />
+      <workItem from="1677842558731" duration="2396000" />
+      <workItem from="1677854002324" duration="19320000" />
+      <workItem from="1677935477483" duration="13004000" />
+      <workItem from="1678016508388" duration="5723000" />
+      <workItem from="1678089736051" duration="7448000" />
+      <workItem from="1678128309565" duration="1705000" />
+      <workItem from="1678130305446" duration="6789000" />
+      <workItem from="1678139278240" duration="1649000" />
+      <workItem from="1678190618296" duration="15593000" />
+      <workItem from="1678285020063" duration="10425000" />
+      <workItem from="1678349177841" duration="2382000" />
+      <workItem from="1678352287524" duration="4714000" />
+      <workItem from="1678377341441" duration="1432000" />
+      <workItem from="1678394701000" duration="1925000" />
+      <workItem from="1678457620062" duration="12144000" />
+      <workItem from="1678548916530" duration="5505000" />
+      <workItem from="1678620379194" duration="8004000" />
+      <workItem from="1678694985360" duration="11829000" />
+      <workItem from="1678782216986" duration="8213000" />
+      <workItem from="1678900032165" duration="3363000" />
+      <workItem from="1679053098300" duration="3080000" />
+      <workItem from="1679080845288" duration="570000" />
+      <workItem from="1679163719369" duration="9773000" />
+      <workItem from="1679228976144" duration="22344000" />
+      <workItem from="1679314401139" duration="10592000" />
+      <workItem from="1679353760176" duration="2521000" />
+      <workItem from="1679391377674" duration="8810000" />
+      <workItem from="1679470491858" duration="9922000" />
+      <workItem from="1679571736930" duration="15850000" />
+      <workItem from="1679654155612" duration="6048000" />
+      <workItem from="1679741293572" duration="12817000" />
+      <workItem from="1679763877215" duration="15225000" />
+      <workItem from="1679829324817" duration="9894000" />
+      <workItem from="1679864411484" duration="1972000" />
+      <workItem from="1679901702486" duration="9332000" />
+      <workItem from="1679988027396" duration="13072000" />
+      <workItem from="1680027463719" duration="5861000" />
+      <workItem from="1680034722488" duration="6188000" />
+      <workItem from="1680090274192" duration="6187000" />
+      <workItem from="1680115155533" duration="7967000" />
+      <workItem from="1680123407282" duration="3753000" />
+      <workItem from="1680173623969" duration="5872000" />
+      <workItem from="1680210208532" duration="7211000" />
+      <workItem from="1680374667320" duration="2580000" />
+      <workItem from="1680434495272" duration="4532000" />
+      <workItem from="1680458909988" duration="4767000" />
+      <workItem from="1680465488606" duration="7135000" />
+      <workItem from="1680476657325" duration="2469000" />
+      <workItem from="1680479181946" duration="2837000" />
+      <workItem from="1680506993595" duration="7396000" />
+      <workItem from="1680526959982" duration="3236000" />
+      <workItem from="1680558834156" duration="2086000" />
+      <workItem from="1680633054106" duration="18454000" />
+      <workItem from="1680793564723" duration="8242000" />
+      <workItem from="1680805352621" duration="7419000" />
+      <workItem from="1680894080373" duration="1329000" />
+      <workItem from="1680899779088" duration="5988000" />
+      <workItem from="1680995505586" duration="4411000" />
+      <workItem from="1681067002877" duration="6537000" />
+      <workItem from="1681159001133" duration="639000" />
+      <workItem from="1681163051090" duration="413000" />
+      <workItem from="1681198426700" duration="5205000" />
+      <workItem from="1681417787358" duration="8396000" />
+      <workItem from="1681682976768" duration="8350000" />
+      <workItem from="1681941712412" duration="4930000" />
+      <workItem from="1682093924263" duration="2706000" />
+      <workItem from="1682206188358" duration="6826000" />
+      <workItem from="1682304739411" duration="2599000" />
+      <workItem from="1682321090766" duration="7499000" />
+      <workItem from="1682369766479" duration="2608000" />
+      <workItem from="1682497904656" duration="9419000" />
+      <workItem from="1682705684129" duration="2872000" />
+      <workItem from="1682719129773" duration="3871000" />
+      <workItem from="1682723071675" duration="526000" />
+      <workItem from="1682723640001" duration="7227000" />
+      <workItem from="1682951727914" duration="3551000" />
+      <workItem from="1683620670533" duration="11184000" />
+      <workItem from="1683751210899" duration="5584000" />
+      <workItem from="1683793730333" duration="12414000" />
+      <workItem from="1683822229044" duration="675000" />
+      <workItem from="1683926154230" duration="8362000" />
+      <workItem from="1684013235544" duration="4286000" />
+      <workItem from="1684070878720" duration="5689000" />
+      <workItem from="1684156245765" duration="14937000" />
+      <workItem from="1684224980894" duration="8731000" />
+      <workItem from="1684271412087" duration="1162000" />
+      <workItem from="1684803366652" duration="1994000" />
+      <workItem from="1684876439584" duration="1641000" />
+      <workItem from="1684940571462" duration="10675000" />
+      <workItem from="1685022851409" duration="3499000" />
+      <workItem from="1685150269463" duration="3320000" />
+      <workItem from="1685364483969" duration="15946000" />
+      <workItem from="1685457535013" duration="8447000" />
+      <workItem from="1685496684293" duration="702000" />
+      <workItem from="1685519360929" duration="10631000" />
+      <workItem from="1685571260003" duration="7383000" />
+      <workItem from="1685620741055" duration="3103000" />
+      <workItem from="1685714522350" duration="2101000" />
+      <workItem from="1685719434567" duration="711000" />
+      <workItem from="1685756643187" duration="2350000" />
+      <workItem from="1685820531746" duration="1854000" />
+      <workItem from="1685831905983" duration="5145000" />
+      <workItem from="1685839008073" duration="985000" />
+      <workItem from="1685840073985" duration="744000" />
+      <workItem from="1685884576717" duration="983000" />
+      <workItem from="1685887672236" duration="791000" />
+      <workItem from="1685909680255" duration="3067000" />
+      <workItem from="1685916542478" duration="667000" />
+      <workItem from="1685917254656" duration="1401000" />
+      <workItem from="1685918966840" duration="758000" />
+      <workItem from="1685919757822" duration="2005000" />
+      <workItem from="1685922297997" duration="3543000" />
+      <workItem from="1685975784589" duration="8441000" />
+      <workItem from="1686094353576" duration="5320000" />
+      <workItem from="1686161114259" duration="4389000" />
+      <workItem from="1686167100605" duration="5670000" />
+      <workItem from="1686648047553" duration="170000" />
+      <workItem from="1686648543899" duration="237000" />
+      <workItem from="1686666349743" duration="648000" />
+      <workItem from="1686847990311" duration="2488000" />
+      <workItem from="1686955202923" duration="1326000" />
+      <workItem from="1687125940906" duration="1098000" />
+      <workItem from="1687158766977" duration="254000" />
+      <workItem from="1687353311336" duration="1334000" />
+      <workItem from="1687392764540" duration="3585000" />
+      <workItem from="1687712549779" duration="3576000" />
+      <workItem from="1687731232930" duration="654000" />
+      <workItem from="1688303420376" duration="663000" />
+      <workItem from="1688379090604" duration="1264000" />
+      <workItem from="1688382133967" duration="2426000" />
+      <workItem from="1688510965637" duration="1261000" />
+      <workItem from="1688978773720" duration="337000" />
+    </task>
+    <task id="LOCAL-00001" summary="add the Dockerfile">
+      <created>1685838119108</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685838119108</updated>
+    </task>
+    <task id="LOCAL-00002" summary="MODELISATION BPMN EXEMPLE">
+      <created>1685838409560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685838409560</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update pom and add dockerfile">
+      <created>1685924535630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685924535630</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update application.yaml">
+      <created>1685985699169</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685985699169</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update application.yaml">
+      <created>1685986030632</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685986030632</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update Dockerfile">
+      <created>1685993674552</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685993674552</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update Dockerfile">
+      <created>1685994834164</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685994834164</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update application.yaml and add docker-compose file">
+      <created>1686095443301</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686095443301</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update application.yaml and add docker-compose file">
+      <created>1686095480846</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686095480846</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update docker-compose file">
+      <created>1686103950040</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686103950040</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update docker-compose file">
+      <created>1686104220468</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686104220468</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update docker-compose file">
+      <created>1686107156986</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686107156986</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update services">
+      <created>1686161631183</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686161631183</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update application.yaml">
+      <created>1686164032342</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686164032342</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update docker-compose.yml">
+      <created>1686168450156</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686168450156</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update form service">
+      <created>1686173675761</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686173675761</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add the Dockerfile" />
+    <MESSAGE value="MODELISATION BPMN EXEMPLE" />
+    <MESSAGE value="update pom and add dockerfile" />
+    <MESSAGE value="update Dockerfile" />
+    <MESSAGE value="update application.yaml and add docker-compose file" />
+    <MESSAGE value="update docker-compose file" />
+    <MESSAGE value="update services" />
+    <MESSAGE value="update application.yaml" />
+    <MESSAGE value="update docker-compose.yml" />
+    <MESSAGE value="update form service" />
+    <option name="LAST_COMMIT_MESSAGE" value="update form service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

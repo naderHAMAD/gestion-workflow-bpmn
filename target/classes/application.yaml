@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/eee
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update # Or "create" if you want to recreate the schema on each startup
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: drissihoucem2002@gmail.com
+    password: maefjbbhwvnexfjd
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  servlet:
+    context-path: /backend
+
+camunda:
+  bpm:
+    enabled: true
+    admin-user:
+      id: camunda
+      password: camunda
+    database:
+      schema-update: true
+    filter:
+      create: All
+    authorization:
+      enabled: true
+    history-level: full
+    auto-deployment-enabled: true
+    default-number-of-retries: 3
+    job-execution:
+      enabled: true
+
+flowvioo:
+  app:
+    jwtSecret: flowviooSecretKey
+    jwtExpirationMs: 86400000
+    jwtRefreshExpirationMs: 86400000
